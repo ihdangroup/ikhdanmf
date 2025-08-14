@@ -1,6 +1,12 @@
 import React from "react";
 
-const TabList = ({ handleTab, selectTab }) => {
+const TabList = ({
+  handleTab,
+  selectTab,
+}: {
+  handleTab: (value: string) => void;
+  selectTab: string;
+}) => {
   const companies = [
     {
       id: 1,

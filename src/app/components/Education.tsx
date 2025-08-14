@@ -3,9 +3,18 @@ import React from "react";
 import Image from "../../../node_modules/next/image";
 import { educations } from "../lib/static/education";
 import TabList from "./TabList";
-
+type Course = {
+  id: number;
+  image: string;
+  year: string;
+  company: string;
+  title: string;
+  duration: string;
+  short_desc: string;
+  tasks: string[];
+};
 const Education = () => {
-  const [course, setCourse] = React.useState([]);
+  const [course, setCourse] = React.useState<Course[]>([]);
   const [selectTab, setSelectTab] = React.useState("Peradaban University");
   function handleTabList(name: string) {
     const educated = educations?.filter(

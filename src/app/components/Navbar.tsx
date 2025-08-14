@@ -7,7 +7,7 @@ import HamburgerMenu from "./HamburgerMenu";
 
 export default function Navbar() {
   const [slide, setSlide] = React.useState(false);
-  const [access, setAccess] = React.useState(undefined);
+  const [access, setAccess] = React.useState<number | null>(null);
   return (
     <div className="fixed px-6 lg:px-0 bg-black/80 h-auto w-full lg:w-auto lg:h-screen top-0 text-slate-800  left-0">
       <nav className="bg-transparent lg:bg-black/80 backdrop-filter-blur  h-auto lg:h-screen flex flex-wrap px-0 lg:px-4 py-2 lg:py-6 space-y-0 lg:space-y-8 lg:border-t-0  border-0 lg:border-t-4 lg:border-r-4 rounded-t-xl lg:rounded-r-xl  border-purple-700">

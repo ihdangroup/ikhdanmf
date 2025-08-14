@@ -1,6 +1,12 @@
 import React from "react";
 
-const HamburgerMenu = ({ handleSlide, slide }) => {
+const HamburgerMenu = ({
+  handleSlide,
+  slide,
+}: {
+  handleSlide: (value: boolean) => void;
+  slide: boolean;
+}) => {
   return (
     <div
       onClick={() => handleSlide(!slide)}
