@@ -4,7 +4,7 @@ import { projects } from "../lib/static/project";
 
 export default function Project() {
   return (
-    <div className="py-12 px-6 lg:px-54 lg:py-24" id="portfolio">
+    <div className="py-12 px-6 lg:pl-54 lg:pr-36 lg:py-24" id="portfolio">
       <h2 className="bg-gradient-to-r from-gray-100 border-b-4 border-blue-400 py-4 via-blue-200 to-indigo-400 inline-block text-transparent bg-clip-text text-2xl lg:text-4xl font-semibold">
         Projects
       </h2>

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Header() {
   return (
     <div
-      className="py-32 px-6 lg:px-54 lg:py-48 flex flex-wrap justify-between"
+      className="py-32 px-6 lg:pl-54 lg:pr-36 lg:py-38 flex flex-wrap justify-between"
       id="header"
     >
       <div className="w-full flex items-center lg:w-1/2">
